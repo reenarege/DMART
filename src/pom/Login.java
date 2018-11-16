@@ -18,11 +18,11 @@ public class Login {
 	private WebElement mobilenumber; 
 	  
 	 
-	@FindBy(id = "password") 
+	@FindBy(name = "password") 
 	private WebElement password; 
 	  
 	 
-	@FindBy(xpath="button[class='signin__btn-cta button-primary']") 
+	@FindBy(xpath="//button[@class='signin__btn-cta button-primary']") 
 	private WebElement login; 
 	  	 
 	public Login(WebDriver driver) 
@@ -42,7 +42,7 @@ public class Login {
 	 } 
 	  	 
 	public void passwordtxtbox(String pass) 
-	 { 
+	 {
 	  	password.sendKeys(pass); 
 	 } 
 	public void loginbtn() 

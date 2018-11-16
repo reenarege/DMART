@@ -1,5 +1,7 @@
+
 package scripts;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import generic.Basetest;
@@ -14,8 +16,8 @@ public class Validlogin extends Basetest{
 	{ 
 	  	Login l=new Login(driver); 
 	  	l.signinbtton(); 
-	  	Thread.sleep(3000);
-	  	String name = Property.getpropertydata(propertyfilepath,"USERNAME"); 
+	  	
+	  	String name = Property.getpropertydata(propertyfilepath,"USERNAME");
 	  	l.mobilenumtxtbox(name);
 	  	String pass= Property.getpropertydata(propertyfilepath,"PASSWORD"); 
 	  	l.passwordtxtbox(pass); 

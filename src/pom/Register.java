@@ -6,28 +6,28 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Register {
-	@FindBy(xpath="a[class='dropdown-register']") 
+	@FindBy(xpath="//a[@class='dropdown-register']") 
 	private WebElement reg;
 	
-	@FindBy(xpath="input[class='form__input firstName_reg']") 
+	@FindBy(xpath="//input[@class='form__input firstName_reg']") 
 	private WebElement fname;
 	
-	@FindBy(xpath="input[class='form__input lastName_reg']") 
+	@FindBy(xpath="//input[@class='form__input lastName_reg']") 
 	private WebElement lname;
 	
-	@FindBy(xpath="input[class='form__input js-mobileNumber']") 
+	@FindBy(xpath="//input[@class='form__input js-mobileNumber']") 
 	private WebElement mobnum;
 	
-	@FindBy(xpath="input[class='form__input email_reg']") 
+	@FindBy(xpath="//input[@class='form__input email_reg']") 
 	private WebElement email;
 	
-	@FindBy(xpath="input[class='form__input reg_showInput password_reg']") 
+	@FindBy(xpath="//input[@class='form__input reg_showInput password_reg']") 
 	private WebElement pswd;
 	
-	@FindBy(xpath="input[class='form__input tcAgree']") 
+	@FindBy(xpath="//input[@class='form__input tcAgree']") 
 	private WebElement iagree;
 	
-	@FindBy(xpath="button[class='registration__btn-cta button-primary']") 
+	@FindBy(xpath="//button[@class='registration__btn-cta button-primary']") 
 	private WebElement regbtn;
 	
 	public Register(WebDriver driver) 

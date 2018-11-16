@@ -9,7 +9,7 @@ public class Cartpage {
 	@FindBy(linkText="Premia Badam American : 500 gms")
 	private WebElement product;
 	
-	@FindBy(xpath="a[class='product-details__btn-addtocart button-primary ']") 
+	@FindBy(xpath="//a[@class='product-details__btn-addtocart button-primary ']") 
 	private WebElement addtocart; 
 	  	 
 	@FindBy(linkText="Logout") 
